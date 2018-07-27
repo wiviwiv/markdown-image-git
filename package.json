@@ -1,6 +1,6 @@
 {
   "name": "markdown-image-git",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Upload image references to github",
   "main": "index.js",
   "bin": {
