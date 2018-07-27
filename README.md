@@ -3,15 +3,19 @@ markdown-image-git
 
 ### 功能用途
 
-将 markdown 中的图片上传到 github 托管
+Upload image references to github
+
+将 markdown 中的图片上传到 github 托管，`_images/VPC.png` => `https://raw.githubusercontent.com/wiviwiv/git-diff-a/master/_images/1532678118364_VPC.png`
 
 ### 使用方式
 
 #### 命令行
 
 ```bash
-npm install markdown-image-git -g
+npm i markdown-image-git -g
+```
 
+```
 # 切换至目录
 
 cd my-markdown
@@ -35,13 +39,13 @@ md_sync --token my-github-token -r wiviwiv/git-diff
 ```json
 
 {
-    "basePath": '/Users/wivwiv/docs/markdown-image-git',
-    "doc": 'README.md',
-    "token": 'my-github-token',
-    "repos": 'wiviwiv/git-diff',
-    "branch": 'master',
-    "dir": '_images/markdown-image-git',
-    "message": 'form markdown-image-git'
+    "basePath": "/Users/wivwiv/docs/markdown-image-git",
+    "doc": "README.md",
+    "token": "my-github-token",
+    "repos": "wiviwiv/git-diff",
+    "branch": "master",
+    "dir": "_images/markdown-image-git",
+    "message": "form markdown-image-git"
 }
 ```
 
@@ -83,6 +87,31 @@ md({
     message: 'form markdown-image-git'
 })
 ```
+
+
+
+
+
+
+
+### 支持语法
+
+```bash
+# 转换前
+- README.md
+
+VPC 拓扑图
+
+![VPC ](_images/VPC.png)
+
+# 转换后
+- README.md
+
+VPC 拓扑图
+
+![VPC ](https://raw.githubusercontent.com/wiviwiv/git-diff-a/master/_images/1532678118364_VPC.png)
+```
+
 
 ### 其他
 
