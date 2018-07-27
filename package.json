@@ -1,0 +1,16 @@
+{
+  "name": "markdown-image-git",
+  "version": "1.0.0",
+  "description": "Upload image references to github",
+  "main": "index.js",
+  "bin": {
+    "md_sync": "./bin/sync.js"
+  },
+  "repository": "https://github.com/wiviwiv/markdown-image-git.git",
+  "author": "wivwiv",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "minimist": "^1.2.0"
+  }
+}
